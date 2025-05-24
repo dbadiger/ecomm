@@ -65,7 +65,7 @@ const Product = () => {
             <p className='pl-2'>(124)</p>
         </div>
         <p className='mt-5 text-3xl font-medium'>{currency}{productData.price}</p>
-        <p className='mt-5 text-gray-500 md:w-4/5'>{productData.description}</p>
+        {/* <p className='mt-5 text-gray-500 md:w-4/5'>{productData.description}</p> */}
         <div className="flex flex-col gap-4 my-8">
           <p>Select Size</p>
           <div className="flex gap-2">
@@ -93,9 +93,8 @@ const Product = () => {
           <b className='border px-5 py-3 text-sm'>Reviews (123)</b>
         </div>
         <div className="flex flex-col gap-4 border px-6 text-sm text-gray-700">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nam quis beatae quae unde iure officiis odio voluptatem quasi dignissimos? Officiis vitae Cumque nihil sit amet doloribus?</p>
-          <p>E-commerce Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-
+          <p className='text-base p-4'>{productData.description}</p>
+          
         </div>
       </div>
 

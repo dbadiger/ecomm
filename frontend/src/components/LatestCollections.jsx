@@ -4,19 +4,22 @@ import Title from './Title';
 import ProductItem from './ProductItem';
 
 const LatestCollections = () => {
-    const {products} = useContext(ShopContext);
+    const {products, navigate} = useContext(ShopContext);
     // console.log(products);
     const [latestProducts, setLatestProducts]=useState([])
     useEffect(()=>{
         setLatestProducts(products.slice(0,10))
     },[products])
+
+  
     return (
     <div className='my-10'>
         <div className="text-center py-8 text-3xl">
-            <Title text1={`LATEST `} text2={`COLLECTIONS`}/>
+            <Title text1={`🔥 LATEST`} text2={` COLLECTIONS`}/>
             <p className='w-3/4 m-auto text-xs sm:text-sm md:text-base text-gray-600'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt cumque adipisci voluptatum,
-             repellendus dignissimos doloribus itaque officiis unde aliquam fugit dolor tempora repudiandae temporibus voluptate, necessitatibus, quibusdam consequuntur ut. Laborum.
+           Step into the season with Divastra’s Latest Collection — a curated selection of contemporary fashion that blends timeless elegance with modern flair. 
+           Each piece is thoughtfully designed to celebrate individuality, empower confidence, and elevate everyday style. 
+           Explore the new arrivals and redefine your wardrobe with fresh silhouettes, rich textures, and bold expressions
             </p>
         </div>
       
@@ -28,8 +31,13 @@ const LatestCollections = () => {
                 ))
             }
         </div>
+        <div className="text-center">
+            <button className="w-28 py-3 mt-4 bg-[#004aad] text-white cursor-pointer" onClick={()=>navigate('/collection')}>
+              SHOP NOW
+            </button>
+        </div>
 
-
+    
     </div>
   )
 }

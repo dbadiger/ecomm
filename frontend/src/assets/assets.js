@@ -53,7 +53,9 @@ import p_img49 from './p_img49.png'
 import p_img50 from './p_img50.png'
 import p_img51 from './p_img51.png'
 import p_img52 from './p_img52.png'
-
+import slider_1 from './4.jpg'
+import slider_2 from './5.jpg'
+import slider_3 from './6.jpg'
 
 import logo from './logo.png'
 import hero_img from './hero_img.png'
@@ -73,6 +75,7 @@ import contact_img from './contact_img.png'
 import razorpay_logo from './razorpay_logo.png'
 import stripe_logo from './stripe_logo.png'
 import cross_icon from './cross_icon.png'
+import divastra_logo from "./Divastra logo.png"
 
 export const assets = {
     logo,
@@ -92,7 +95,8 @@ export const assets = {
     contact_img,
     razorpay_logo,
     stripe_logo,
-    cross_icon
+    cross_icon,
+    slider_1,slider_2,slider_3, divastra_logo
 }
 
 export const products = [

@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Title from '../components/Title'
 import { assets } from '../assets/assets'
 import NewsLetter from '../components/NewsLetterBox'
+import { ShopContext } from '../context/ShopContext'
 
 const Contact = () => {
+  const {navigate} = useContext(ShopContext)
   return (
     <div>
       <div className="text-center text-2xl pt-10 border-t">
@@ -14,11 +16,13 @@ const Contact = () => {
         <img className='w-full md:max-w-[480px]' src={assets.contact_img} alt="" />
         <div className="flex flex-col justify-center items-start gap-6">
           <p className='font-semibold text-xl text-gray-600'> Our Store</p>
-          <p className='text-gray-500'>Extro Marketing Agency<br/>2nd Floor, Shrinivas Enclave, Vidyanagar Hubli</p>
-          <p className='text-gray-500'>Tel: +91 987466520<br/>Email: contact@extromarketing.in</p>
-          <p className='font-semibold text-xl text-gray-600'>Careers</p>
-          <p className='text-gray-500'>Learn more about team and job opeinings</p>
-          <button className='border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500'>Expolore Jobs</button>
+          <p className='text-gray-500'>Divastra Clothing Collections<br/>2nd Floor, Shrinivas Enclave, Vidyanagar Hubli</p>
+          <p className='text-gray-500'>Tel: +91 8197745652<br/>Email: contact@divastra.in</p>
+          <p className='font-semibold text-xl text-gray-600'>Collections</p>
+          <p className='text-gray-500'>Explore Our Collections</p>
+          <button 
+          onClick={()=>navigate("/collection")}
+          className='border border-black px-8 py-4 text-sm hover:bg-[#004aad] hover:text-white transition-all duration-500'>Order Now</button>
         </div>
       </div>
       <NewsLetter/>

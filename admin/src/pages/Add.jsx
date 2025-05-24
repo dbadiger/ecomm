@@ -63,6 +63,11 @@ const Add = ({token}) => {
   return (
     <form onSubmit={onSubmitHandler} className="flex flex-col w-full items-start gap-3">
       <div className="">
+        <div className='inline-flex gap-2 items-center mb-3'>
+          <h2 className='text-[#004aad] font-semibold text-3xl font-outfit'>ADD <span className='text-gray-700 font-medium'>PRODUCTS</span></h2>
+          <p className='w-8 sm:w-12 h-[1px] bg-gray-700'></p>
+        </div>
+        
         <p className="mb-2">Upload Image</p>
         <div className="flex gap-2">
           <label htmlFor="image1">
@@ -176,7 +181,7 @@ const Add = ({token}) => {
             value={price}
             className="w-full px-3 py-2 sm:w-[120px]"
             type="Number"
-            placeholder="23"
+            placeholder="₹ 499"
           />
         </div>
       </div>
@@ -194,7 +199,7 @@ const Add = ({token}) => {
               )
             }
           >
-            <p className={`${sizes.includes("S")? "bg-blue-400" :"bg-slate-200"} px-3 py-1 cursor-pointer`}>S</p>
+            <p className={`${sizes.includes("S")? "bg-[#004aad] text-white" :"bg-slate-200"} px-3 py-1 cursor-pointer`}>S</p>
           </div>
           <div
             onClick={() =>
@@ -205,7 +210,7 @@ const Add = ({token}) => {
               )
             }
           >
-            <p className={`${sizes.includes("M")? "bg-blue-400" :"bg-slate-200"} px-3 py-1 cursor-pointer`}>M</p>
+            <p className={`${sizes.includes("M")? "bg-[#004aad] text-white" :"bg-slate-200"} px-3 py-1 cursor-pointer`}>M</p>
           </div>
           <div
             onClick={() =>
@@ -216,7 +221,7 @@ const Add = ({token}) => {
               )
             }
           >
-            <p className={`${sizes.includes("L")? "bg-blue-400" :"bg-slate-200"} px-3 py-1 cursor-pointer`}>L</p>
+            <p className={`${sizes.includes("L")? "bg-[#004aad] text-white" :"bg-slate-200"} px-3 py-1 cursor-pointer`}>L</p>
           </div>
           <div
             onClick={() =>
@@ -227,7 +232,7 @@ const Add = ({token}) => {
               )
             }
           >
-            <p className={`${sizes.includes("XL")? "bg-blue-400" :"bg-slate-200"} px-3 py-1 cursor-pointer`}>XL</p>
+            <p className={`${sizes.includes("XL")? "bg-[#004aad] text-white" :"bg-slate-200"} px-3 py-1 cursor-pointer`}>XL</p>
           </div>
           <div
             onClick={() =>
@@ -238,7 +243,7 @@ const Add = ({token}) => {
               )
             }
           >
-            <p className={`${sizes.includes("XXL")? "bg-blue-400" :"bg-slate-200"} px-3 py-1 cursor-pointer`}>XXL</p>
+            <p className={`${sizes.includes("XXL")? "bg-[#004aad] text-white" :"bg-slate-200"} px-3 py-1 cursor-pointer`}>XXL</p>
           </div>
         </div>
       </div>
@@ -253,7 +258,7 @@ const Add = ({token}) => {
         </label>
       </div>
 
-      <button className="w-28 py-3 mt-4 bg-black text-white cursor-pointer" type="submit">
+      <button className="w-28 py-3 mt-4 bg-[#004aad] text-white cursor-pointer" type="submit">
         ADD
       </button>
     </form>

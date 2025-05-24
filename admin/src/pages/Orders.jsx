@@ -52,7 +52,10 @@ const Orders = ({token}) => {
 
   return (
     <div>
-      <h3>Orders Page</h3>
+        <div className='inline-flex gap-2 items-center mb-3'>
+          <h2 className='text-[#004aad] font-semibold text-3xl font-outfit'>ORDERED <span className='text-gray-700 font-medium'>PRODUCTS</span></h2>
+          <p className='w-8 sm:w-12 h-[1px] bg-gray-700'></p>
+        </div>
       <div >
         {orders.map((order, index)=>(
           <div key={index} className="grid grid-cols-1 sm:grid-cols-[0.5fr_2fr_1fr] lg:grid-cols-[0.5fr_2fr_1fr_1fr_1fr] gap-3 items-start border-2 border-gray-200 md:p-8 my-3 md:my-4 text-xs sm:text-sm text-gray-700">
